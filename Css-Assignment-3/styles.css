@@ -1,0 +1,183 @@
+/* Global styles */
+body {
+    font-family: 'Pacifico', cursive; /* Set font family for the whole page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    color: #ccc; /* Text color for most text */
+    background: linear-gradient(45deg, #2c3e50, #1a252f); /* Updated gradient background */
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px; /* Set maximum width for content */
+    margin: 0 auto; /* Center align container */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+/* Header styles */
+header {
+    padding: 20px 0; /* Add padding to header */
+}
+
+/* Logo styles */
+.logo {
+    display: flex; /* Use flexbox for logo alignment */
+    align-items: center; /* Center align items vertically */
+}
+
+.logo img {
+    width: 60px; /* Adjust the size of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 10px; /* Add spacing between the logo and text */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 36px; /* Set font size for logo */
+    color:red; /* KitKat text color (Red) */
+}
+
+/* Navigation styles */
+nav {
+    margin-left: auto; /* Push navigation to the right */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ccc; /* Navigation text color */
+    margin-right: 20px; /* Add spacing between navigation links */
+    transition: color 0.3s ease; /* Smooth transition effect for color change */
+}
+
+nav a:hover {
+    color: #ff7f00; /* Navigation text color on hover */
+}
+
+/* Main content styles */
+.main {
+    padding: 40px 0; /* Add padding to main content */
+}
+
+/* Section styles */
+.section {
+    position: relative; /* Position relative for absolute positioning within */
+    background-color: rgba(255, 255, 255, 0.5); /* Translucent white color */
+    padding: 40px; /* Add padding to sections */
+    margin-bottom: 40px; /* Add margin between sections */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+/* Background SVG styles */
+.bg-svg {
+    position: absolute; /* Position SVG absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: -1; /* Move SVG behind other content */
+}
+
+/* Section title styles */
+.section h2 {
+    font-size: 32px; /* Increased font size */
+    font-weight: bold; /* Increased font weight */
+    color: #000; /* Section title text color (black) */
+    margin-bottom: 20px; /* Add margin below section titles */
+}
+
+/* Section paragraph styles */
+.section p {
+    font-size: 16px; /* Set font size for paragraphs */
+    line-height: 1.6; /* Set line height */
+    color: #ccc; /* Section paragraph text color */
+}
+
+/* Image styles */
+.image img {
+    max-width: 100%; /* Maximum width for images */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+/* Flavor section styles */
+.flavor {
+    display: flex; /* Use flexbox for image layout */
+    flex-wrap: wrap; /* Allow images to wrap */
+}
+
+.flavor img {
+    max-width: 200px; /* Set maximum width for images */
+    border-radius: 10px; /* Add rounded corners */
+    margin: 10px; /* Add margin around images */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.flavor img:hover {
+    transform: scale(1.1); /* Scale images on hover */
+}
+
+/* Contact form styles */
+.contact-form form {
+    max-width: 500px; /* Set maximum width for form */
+    margin: 0 auto; /* Center align form */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px); /* Set width for input fields */
+    margin-bottom: 20px; /* Add margin below input fields */
+    padding: 10px; /* Add padding to input fields */
+    border: 1px solid #ccc; /* Add border to input fields */
+    border-radius: 5px; /* Add rounded corners to input fields */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    transition: border-color 0.3s ease; /* Smooth transition effect for border color */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ccc; /* Input focus border color */
+    outline: none; /* Remove default focus outline */
+}
+
+.contact-form button {
+    background-color: #999; /* Darker shade of gray */
+    color: #333; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding to button */
+    border-radius: 5px; /* Add rounded corners to button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.contact-form button:hover {
+    background-color: #777; /* Darker shade of gray on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Footer background color */
+    color: #fff; /* Footer text color */
+    padding: 20px 0; /* Add padding to footer */
+    text-align: center; /* Center align text */
+}
+
+footer p {
+    margin-bottom: 10px; /* Add margin below paragraph */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    header .logo h1 {
+        font-size: 24px; /* Decrease font size for smaller screens */
+    }
+
+    .section {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .flavor img {
+        max-width: calc(50% - 20px); /* Adjust image width for smaller screens */
+    }
+}
